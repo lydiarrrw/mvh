@@ -1,0 +1,42 @@
+.about-header_img {
+  width: 100%;
+  height: 40vh;
+  margin-top: 1rem;
+  object-fit: cover;
+}
+
+.about-rooms {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-type {
+  width: 50%;
+  margin: 0 0.1rem;
+}
+
+.about-rooms_img {
+  width: 100%;
+  height: 50%;
+  min-width: 15rem;
+}
+
+.book_important-documents {
+  a {
+    color: $brunswick-green;
+  }
+}
+@media (min-width: 600px) {
+  .about-header_img {
+    margin-top: 0;
+  }
+
+  .about-rooms {
+    display: flex;
+    flex-direction: row;
+
+    section {
+      margin: 0.2rem;
+    }
+  }
+}

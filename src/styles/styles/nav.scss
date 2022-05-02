@@ -1,0 +1,53 @@
+@import "_variables";
+// @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: $baby-powder;
+
+  a {
+    text-decoration: none;
+    color: $chicago;
+  }
+}
+
+.navbar-logo {
+  margin: 1rem;
+  font-weight: 900;
+}
+
+.navbar-menu-container {
+  width: 100%;
+}
+
+.nav-menu-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 1rem 1rem 1rem;
+  font-weight: 900;
+  list-style: none;
+}
+
+//////////////////////MEDIA Query/////////////////////////////
+
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .navbar-menu-container {
+    width: 40%;
+  }
+
+  .nav-menu-options {
+    margin-bottom: 0;
+  }
+}

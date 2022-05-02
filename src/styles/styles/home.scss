@@ -1,0 +1,218 @@
+@import "variables";
+// @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.parallax {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("http://localhost:8000/assets/wall.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+//home
+
+#home-header {
+  background-color: $chicago;
+  height: 40%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column-reverse;
+
+  h1 {
+    color: $baby-powder;
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  p {
+    color: $baby-powder;
+    text-align: center;
+  }
+}
+
+.home-header-title {
+  margin: 1rem;
+}
+
+#mission {
+  min-height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    background: $baby-powder;
+    padding: 5%;
+    margin: 7%;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+#more-info {
+  min-height: 25rem;
+  background-color: $brunswick-green;
+  padding-bottom: 2rem;
+
+  h2 {
+    color: $baby-powder;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .more-info-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .more-info-card {
+    background-color: $baby-powder;
+    margin: 1rem auto;
+    height: 280px;
+    width: 260px;
+    box-shadow: 5px 5px 5px 1px #404040;
+    text-align: center;
+    text-decoration: none;
+
+    h3 {
+      margin-bottom: 0.5rem;
+
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin: 0 1rem 1rem 1rem;
+    }
+
+    img {
+      width: 260px;
+      height: auto;
+    }
+  }
+}
+
+#gallery {
+  min-height: 7rem;
+}
+
+#find-us {
+  min-height: 7rem;
+  color: $baby-powder;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  h3 {
+    font-size: 2.5rem;
+    color: $baby-powder;
+  }
+
+  p {
+    color: $baby-powder;
+  }
+
+  .find-us-details {
+    background-color: $chicago;
+    text-align: center;
+  }
+}
+
+.google-map {
+  overflow-x: hidden;
+  width: 500px;
+  height: 350px;
+  position: relative;
+  left: -10%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+//////////////////////MEDIA Query/////////////////////////////
+
+@media (min-width: 600px) {
+  #home-header {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h1 {
+      color: $baby-powder;
+      margin-left: 1.5rem;
+      text-align: left;
+      font-size: 5rem;
+    }
+
+    p {
+      text-align: left;
+      margin-left: 1.5rem;
+    }
+
+    img {
+      width: 100wv;
+    }
+  }
+
+  .home-header-title {
+    width: 30%;
+    margin: 4%;
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  #more-info {
+    flex-direction: row;
+
+    .more-info-cards {
+      display: flex;
+      flex-direction: row;
+      margin: 1.5rem 1rem;
+      min-height: 15rem;
+    }
+  }
+
+  #find-us {
+    flex-direction: row;
+
+    .find-us-details {
+      width: 35%;
+      height: 20rem;
+      padding: 5rem 0 5rem 12rem;
+      text-align: left;
+    }
+  }
+
+  .google-map {
+    overflow-x: hidden;
+    width: 500px;
+    height: 350px;
+    position: relative;
+    left: -10%;
+    top: 3.5rem;
+  }
+}
+
+// .google-map {
+//   display: none;
+// }
