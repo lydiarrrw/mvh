@@ -1,5 +1,10 @@
 import React from "react";
 import MapContainer from "./MapContainer.js";
+// import mvhhall from "../images/mvh-sunshine.jpg";
+import mvhhall from "../images/MVH-banner-photo.jpg";
+import newsevents from "../images/reading-hall-board-comp.png";
+import bookhall from "../images/celebration-hall-small.png";
+import abouthall from "../images/activities/coffee.png";
 
 const Home = () => {
   return (
@@ -9,7 +14,7 @@ const Home = () => {
           <h1>Milburn Village Hall</h1>
           <p>Community and event space</p>
         </div>
-        <img src="../assets/milburn-village-hall.jpg" />
+        <img className="about-header_img" src={mvhhall} height="50px" />
       </section>
       <section id="mission">
         <p>
@@ -23,25 +28,25 @@ const Home = () => {
         <h2>More about the hall</h2>
         <div className="more-info-cards">
           <a className="more-info-card" href="/whats-on">
-            <img src="../assets/reading-hall-board.JPG" />
-            <h3 className="more-info-card-title">News and Events</h3>
+            <img src={newsevents} height="50px" />
+            <h3 className="more-info-card-title">What's on</h3>
             <p>Find out what's on at Milburn Village Hall</p>
           </a>
           <a className="more-info-card" href="/book">
-            <img src="../assets/whole-hall.JPG" />
+            <img src={bookhall} height="50px" />
             <h3 className="more-info-card-title">Book the hall</h3>
             <p>See prices and terms of booking</p>
           </a>
           <a className="more-info-card" href="/about">
-            <img src="../assets/coffee-morning1.JPG" />
+            <img src={abouthall} height="50px" />
             <h3 className="more-info-card-title">About the hall</h3>
             <p>Learn more about the facilities of the hall</p>
           </a>
         </div>
       </section>
-      <section id="gallery">
+      {/* <section id="gallery">
         <p>Gallery </p>
-      </section>
+      </section> */}
       <section id="find-us">
         <div className="find-us-details">
           <h3>Find Us</h3>
@@ -57,9 +62,7 @@ const Home = () => {
             <b>CA10 1TL</b>
           </p>
         </div>
-        <div className="google-map">
-          <MapContainer />
-        </div>
+        <map-component></map-component>
       </section>
     </main>
   );

@@ -2,7 +2,6 @@
   "name": "basic-react-webpack-setup",
   "version": "1.0.0",
   "description": "",
-  "homepage":".",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -31,11 +30,13 @@
     "@googlemaps/react-wrapper": "^1.1.24",
     "axios": "^0.21.4",
     "bulma": "^0.9.0",
+    "dotenv-webpack": "^8.0.0",
     "google-maps-react": "^2.0.6",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.14.0",
     "react-embedded-google-calendar": "^1.0.11",
+    "react-mapbox-gl": "^5.1.1",
     "react-pdf": "^5.7.2",
     "react-router-dom": "^5.3.0"
   }

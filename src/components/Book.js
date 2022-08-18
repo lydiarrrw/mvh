@@ -1,17 +1,23 @@
 import React from "react";
+import eventimage from "../images/celebration-hall-small.png";
+import financePolicyPdf from "../../public/finance-policy-2020.pdf";
+import heatingInstructions from "../../public/heating-instructions.pdf";
+import infoForUsers from "../../public/Milburn_VH_Info_for_Users.pdf";
+import bookingFormAgreement from "../../public/Milburn_VH_Booking_Form_Agreement.pdf";
+import complaintsPolicy from "../../public/mvh-complaints-policy-2019.pdf";
+import vhDataProtectionPolicy from "../../public/vh_dataProtectionPolicy.pdf";
+import safeguardingStatement from "../../public/safeguardingstatment.pdf";
+import pdfIcon from "../images/pdf-svgrepo-com.svg";
 
 const Book = () => {
   return (
     <main>
       <div className="about-header">
-        <img
-          className="about-header_img"
-          src="../assets/celebration-hall.jpeg"
-        />
+        <img className="about-header_img" src={eventimage} height="50px" />
       </div>
       <div className="content-container">
         <div>
-          <h2>Booking terms and charges</h2>
+          <h1>How to book</h1>
           <p>
             The hall can be booked by session or for the whole day. Sessions are
             as follows:
@@ -21,6 +27,7 @@ const Book = () => {
               <li>Evening (6pm to 11pm)</li>
             </ul>
           </p>
+          <h2>Hire charges</h2>
           <table>
             <th colspan="4" className="table-header">
               Hire charges
@@ -71,10 +78,12 @@ const Book = () => {
           </ul>
 
           <div>
-            <h3>Discounts</h3>
-            Discounts are available for residents of Milburn Parish Community
-            activity groups, Charity and non revenue raising groups and events
-            organised by the Hall Committee.
+            <h2>Discounts</h2>
+            <p>
+              Discounts are available for residents of Milburn Parish Community
+              activity groups, Charity and non revenue raising groups and events
+              organised by the Hall Committee.
+            </p>
             <table>
               <th colspan="3" className="table-header">
                 Discounts
@@ -117,48 +126,92 @@ const Book = () => {
           </p>
           <h2>Important Documents</h2>
           <div className="book_important-documents">
+            <h3>Booking documents</h3>
             <ul>
-              <h4>Booking documents</h4>
               <li>
-                <a href="/src/assets/vh_dataprotectionpolicy.pdf" download>
+                <a href={bookingFormAgreement} download>
+                  <img
+                    src={pdfIcon}
+                    alt="pdf icon"
+                    className="book_important-documents_pdf-icon"
+                  />
                   Booking form
                 </a>
               </li>
               <li>
-                <a href="/mvh-complaints-policy-july-19.pdf" download>
-                  Booking conditions
+                <a href={infoForUsers} download>
+                  <img
+                    src={pdfIcon}
+                    alt="pdf icon"
+                    className="book_important-documents_pdf-icon"
+                  />
+                  Booking information
                 </a>
               </li>
             </ul>
-
+            <h3>Policies</h3>
             <ul>
-              <h4>Policies</h4>
               <li>
-                <a href="/src/assets/vh_dataprotectionpolicy.pdf" download>
+                <a href={vhDataProtectionPolicy} download>
+                  <img
+                    src={pdfIcon}
+                    alt="pdf icon"
+                    className="book_important-documents_pdf-icon"
+                  />
                   Data Protection Policy
                 </a>
               </li>
               <li>
-                <a href="/mvh-complaints-policy-july-19.pdf" download>
+                <a href={complaintsPolicy} download>
+                  <img
+                    src={pdfIcon}
+                    alt="pdf icon"
+                    className="book_important-documents_pdf-icon"
+                  />
                   Complaints Policy
                 </a>
               </li>
               <li>
-                <a href="/src/assets/finance-policy-2020.pdf" download>
+                <a href={safeguardingStatement} download>
+                  <img
+                    src={pdfIcon}
+                    alt="pdf icon"
+                    className="book_important-documents_pdf-icon"
+                  />
+                  Safeguarding Statment
+                </a>
+              </li>
+              <li>
+                <a href={financePolicyPdf} download>
+                  <img
+                    src={pdfIcon}
+                    alt="pdf icon"
+                    className="book_important-documents_pdf-icon"
+                  />
                   Finance Policy
                 </a>
               </li>
             </ul>
+            <h3>Hall instructions</h3>
             <ul>
-              <h4>Hall instructions</h4>
               <li>
-                <a href="/src/assets/heating-instructions.pdf" download>
+                <a href={heatingInstructions} download>
+                  <img
+                    src={pdfIcon}
+                    alt="pdf icon"
+                    className="book_important-documents_pdf-icon"
+                  />
                   Heating instructions
                 </a>
               </li>
               <li>
                 <a href="/src/assets/vh_dataprotectionpolicy.pdf" download>
-                  Kitchen??
+                  <img
+                    src={pdfIcon}
+                    alt="pdf icon"
+                    className="book_important-documents_pdf-icon"
+                  />
+                  Kitchen
                 </a>
               </li>
             </ul>

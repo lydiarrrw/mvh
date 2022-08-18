@@ -1,0 +1,230 @@
+@import "_variables";
+
+.whats-on-activities {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    display: flex;
+    align-items: center;
+    max-width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+    margin: 0.7rem;
+    outline: 4px solid $gold-border;
+    outline-offset: -8px;
+    transition: all 0.2s ease-in-out;
+
+    @media (min-width: $mobile) {
+      max-width: 18rem;
+      height: 18rem;
+    }
+
+    @media (min-width: $medium) {
+      max-width: 20rem;
+      height: 20rem;
+    }
+
+    h4 {
+      margin: 0 1rem;
+      display: flex;
+      align-items: center;
+      color: $baby-powder;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      cursor: pointer;
+
+      h4 {
+        text-decoration: underline;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.whats-on-svg {
+  height: 5rem;
+  padding-right: 1rem;
+  border-right: 0.1rem solid $baby-powder;
+}
+
+.google-calendar {
+  border: 0.2rem solid $brunswick-green;
+  padding: 1rem;
+}
+
+.whats-on-button {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $brunswick-green;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  h4 {
+    position: relative;
+    text-align: center;
+  }
+
+  &:hover {
+    background: unset;
+
+    h4 {
+      color: $brunswick-green;
+    }
+  }
+}
+
+.whats-on-button-badminton {
+  &:before {
+    background: url("../../images/activities/badminton.jpg");
+    background-size: cover;
+  }
+}
+
+.whats-on-button-table-tennis {
+  &:before {
+    background: url("../../images/activities/table-tennis.jpg");
+    background-size: cover;
+  }
+}
+
+.whats-on-button-film-night {
+  &:before {
+    background: url("../../images/activities/film.jpg");
+    background-size: cover;
+  }
+}
+
+.whats-on-button-wine-club {
+  &:before {
+    background: url("../../images/activities/wine.jpg");
+    background-size: cover;
+  }
+}
+
+.whats-on-button-playgroup {
+  &:before {
+    background: url("../../images/activities/playgroup.jpg");
+    background-size: cover;
+  }
+}
+
+.whats-on-button-pub-nights {
+  &:before {
+    background: url("../../images/activities/beer.jpg");
+    background-size: cover;
+  }
+}
+
+.whats-on-button-quiz {
+  &:before {
+    background: url("../../images/activities/quiz.jpg");
+    background-size: cover;
+  }
+}
+
+.whats-on-button-arts {
+  &:before {
+    background: url("../../images/activities/arts.jpg");
+    background-size: cover;
+  }
+}
+
+.whats-on-button-coffee {
+  &:before {
+    background: url("../../images/activities/coffee.png");
+    background-size: cover;
+  }
+}
+
+// stylemygcal overrides
+#smgc-cal-YhUAQFrSY5awkPWnT7VD-calendar-container
+  .smgc-cal-YhUAQFrSY5awkPWnT7VD-calendar-month-footer {
+  display: none !important;
+}
+
+.smgc-cal-YhUAQFrSY5awkPWnT7VD-event-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  margin: 1rem !important;
+  text-align: center !important;
+}
+
+.modal-hidden {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  font-size: 50px;
+  color: white;
+  // transform: translate(-50%, -50%);
+  // -ms-transform: translate(-50%, -50%);
+  position: fixed; /* Sit on top of the page content */
+  display: none;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.whats-on-modal {
+  font-size: 50px;
+  color: white;
+  // transform: translate(-50%, -50%);
+  // -ms-transform: translate(-50%, -50%);
+  position: fixed; /* Sit on top of the page content */
+  display: block;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2;
+}
+
+.whats-on-modal_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $baby-powder;
+  margin: 15%;
+  height: 60vh;
+  outline: $gold-border 0.3rem solid;
+  outline-offset: 10px;
+}
+
+.whats-on-modal_close {
+  display: flex;
+  align-self: end;
+  margin-right: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import mvhlogo from "../images/mvh-logo-light.svg";
 
 const Footer = () => {
   return (
@@ -8,13 +9,13 @@ const Footer = () => {
           <h4>About</h4>
           <ul>
             <li>
-              <a href="/about">Facilities</a>
+              <a href="/mvh-example-draft/about">Facilities</a>
             </li>
             <li>
-              <a href="/whats-on">News and events</a>
+              <a href="/mvh-example-draft/whats-on">News and events</a>
             </li>
             <li>
-              <a href="/book">Policies</a>
+              <a href="/mvh-example-draft/book">Policies</a>
             </li>
           </ul>
         </div>
@@ -22,13 +23,13 @@ const Footer = () => {
           <h4>Hall Bookings</h4>
           <ul>
             <li>
-              <a href="/what's-on">Calendar</a>
+              <a href="/mvh-example-draft/what's-on">Calendar</a>
             </li>
             <li>
-              <a href="/book">Charges</a>
+              <a href="/mvh-example-draft/book">Charges</a>
             </li>
             <li>
-              <a href="/book">Booking enquiries</a>
+              <a href="/mvh-example-draft/book">Booking enquiries</a>
             </li>
           </ul>
         </div>
@@ -38,28 +39,22 @@ const Footer = () => {
             <li>
               <a href="mailto:milburnvillagehall@gmail.com">Email us</a>
             </li>
+            <li>
+              <a
+                href="https://forms.gle/mCjRBZUFBj4okmaJA"
+                target="blank"
+                rel="noopener"
+              >
+                Sign up to recieve news
+              </a>
+            </li>
           </ul>
         </div>
-        <div className="footer-signup">
-          <form>
-            <label htmlFor="email">Sign up for news:</label>
-            <div>
-              <input
-                type="text"
-                placeholder="Email address"
-                name="email address"
-                className="input-email"
-              />
-              <input
-                type="submit"
-                value="Submit"
-                className="input-submit"
-              ></input>
-            </div>
-          </form>
+        <div className="footer_charity">
+          <img src={mvhlogo} height="70px" className="navbar-logo-image" />
+          <small>Charity commision number: 523069</small>
         </div>
       </div>
-      <small className="footer_charity">Charity commision number: 523069</small>
     </section>
   );
 };

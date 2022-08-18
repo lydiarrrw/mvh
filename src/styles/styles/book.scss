@@ -1,7 +1,6 @@
 .about-header_img {
   width: 100%;
-  height: 40vh;
-  margin-top: 1rem;
+  height: 35vh;
   object-fit: cover;
 }
 
@@ -11,7 +10,6 @@
 }
 
 .room-type {
-  width: 50%;
   margin: 0 0.1rem;
 }
 
@@ -23,14 +21,34 @@
 
 .book_important-documents {
   a {
+    display: flex;
+    align-items: center;
     color: $brunswick-green;
-  }
-}
-@media (min-width: 600px) {
-  .about-header_img {
-    margin-top: 0;
+    text-decoration: none;
+
+    &:hover {
+      font-weight: 700;
+      text-decoration: underline;
+    }
   }
 
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 1rem 2rem;
+    }
+  }
+
+  .book_important-documents_pdf-icon {
+    width: 5rem;
+    height: auto;
+  }
+}
+
+@media (min-width: 600px) {
   .about-rooms {
     display: flex;
     flex-direction: row;
@@ -38,5 +56,9 @@
     section {
       margin: 0.2rem;
     }
+  }
+
+  .room-type {
+    width: 50%;
   }
 }

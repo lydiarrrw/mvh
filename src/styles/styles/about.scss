@@ -1,0 +1,93 @@
+@import "variables";
+
+.about-tab-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.about-tab {
+  border: 0.2rem solid $gold-border;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  width: 33%;
+  padding: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    opacity: initial;
+  }
+}
+
+.about-tab_container_information {
+  border: 0.2rem solid $gold-border;
+  border-top: none;
+  margin-bottom: 2rem;
+}
+
+.whole-hall-hidden {
+  display: none;
+}
+
+.whole-hall,
+.large-hall,
+.small-hall {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem;
+}
+
+.large-hall-hidden {
+  display: none;
+}
+
+.small-hall-hidden {
+  display: none;
+}
+
+.inactive-hall-tab {
+  border-bottom: 0.2rem solid $gold-border;
+  opacity: 0.5;
+  background-color: $brunswick-green;
+  color: $baby-powder;
+}
+
+.hall_img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  max-height: 18rem;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+.about_key-info {
+  margin: 0 1.5rem;
+}
+
+.about_contact-link {
+  color: $brunswick-green;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $mobile) {
+  .hall_img {
+    max-height: 30rem;
+  }
+}
+
+@media (min-width: $small-medium) {
+  .hall_img {
+    max-height: 45rem;
+  }
+}

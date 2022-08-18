@@ -1,18 +1,43 @@
 @import "_variables";
 // @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;700;800&display=swap");
 
 h1 {
   color: $brunswick-green;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: $brunswick-green;
+  font-family: "PT Sans", sans-serif;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3,
+h4 {
   font-size: 2rem;
-  font-weight: 900;
 }
 
-h2, h3, h4, p {
+p,
+li {
   color: $brunswick-green;
+  font-size: 1.6rem;
+  font-family: "Playfair Display", serif;
 }
 
-p {
-  color: $brunswick-green;
-  font-size: 1rem;
+small {
+  font-family: "Playfair Display", serif;
 }
