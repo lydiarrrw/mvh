@@ -13,7 +13,12 @@ const Book = () => {
   return (
     <main>
       <div className="about-header">
-        <img className="about-header_img" src={eventimage} height="50px" />
+        <img
+          className="about-header_img"
+          src={eventimage}
+          height="50px"
+          alt="party in hall"
+        />
       </div>
       <div className="content-container">
         <div>
@@ -27,7 +32,7 @@ const Book = () => {
               <li>Evening (6pm to 11pm)</li>
             </ul>
           </p>
-          <h2>Hire charges</h2>
+          <h2 id="book_hire-charges">Hire charges</h2>
           <table>
             <th colspan="4" className="table-header">
               Hire charges
@@ -114,7 +119,7 @@ const Book = () => {
               </tr>
             </table>
           </div>
-          <h2>How to book</h2>
+          <h2 id="book_how-to-book">How to book</h2>
           <p>
             To book, please contact:
             <br />
@@ -124,7 +129,7 @@ const Book = () => {
             <br />
             <b>Email:</b> joanna_armstrong@outlook.com
           </p>
-          <h2>Important Documents</h2>
+          <h2 id="book_important-documents">Important Documents</h2>
           <div className="book_important-documents">
             <h3>Booking documents</h3>
             <ul>

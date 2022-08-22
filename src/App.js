@@ -15,10 +15,10 @@ const App = () => (
   <BrowserRouter>
     <Nav />
     <Switch>
-      <Route exact path="/mvh-example-draft" component={Home} />
-      <Route exact path="/mvh-example-draft/whats-on" component={WhatsOn} />
-      <Route exact path="/mvh-example-draft/about" component={About} />
-      <Route exact path="/mvh-example-draft/book" component={Book} />
+      <Route exact path="/milburn-village-hall" component={Home} />
+      <Route exact path="/milburn-village-hall/whats-on" component={WhatsOn} />
+      <Route exact path="/milburn-village-hall/about" component={About} />
+      <Route exact path="/milburn-village-hall/book" component={Book} />
     </Switch>
     <Footer />
   </BrowserRouter>

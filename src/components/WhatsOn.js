@@ -50,12 +50,17 @@ const WhatsOn = () => {
   return (
     <main>
       <div className="about-header">
-        <img className="about-header_img" src={COFFEE} height="70px" />
+        <img
+          className="about-header_img"
+          src={COFFEE}
+          height="70px"
+          alt="people attend coffee morning in hall"
+        />
       </div>
       <div className={badminton ? "whats-on-modal" : "modal-hidden"}>
         <div className="whats-on-modal_box">
           <div className="whats-on-modal_close" onClick={(e) => closeButton()}>
-            <p>X Close</p>
+            <p role="button">X Close</p>
           </div>
           <div>
             <h2>Badminton club</h2>
@@ -159,43 +164,57 @@ const WhatsOn = () => {
             className="whats-on-button whats-on-button-badminton"
             onClick={(event) => activityClick(event.target.innerText)}
           >
-            <h4>Badminton Club</h4>
+            <div className="h4" role="button">
+              Badminton Club
+            </div>
           </li>
           <li
             className="whats-on-button whats-on-button-table-tennis"
             onClick={(event) => activityClick(event.target.innerText)}
           >
-            <h4>Table Tennis Club</h4>
+            <div className="h4" role="button">
+              Table Tennis Club
+            </div>
           </li>
           <li
             className="whats-on-button whats-on-button-film-night"
             onClick={(event) => activityClick(event.target.innerText)}
           >
-            <h4>Film Night</h4>
+            <div className="h4" role="button">
+              Film Night
+            </div>
           </li>
           <li
             className="whats-on-button whats-on-button-wine-club"
             onClick={(event) => activityClick(event.target.innerText)}
           >
-            <h4>Wine Club</h4>
+            <div className="h4" role="button">
+              Wine Club
+            </div>
           </li>
           <li
             className="whats-on-button whats-on-button-playgroup"
             onClick={(event) => activityClick(event.target.innerText)}
           >
-            <h4>Playgroup</h4>
+            <div className="h4" role="button">
+              Playgroup
+            </div>
           </li>
           <li
             className="whats-on-button whats-on-button-quiz"
             onClick={(event) => activityClick(event.target.innerText)}
           >
-            <h4>Quiz and Games Nights</h4>
+            <div className="h4" role="button">
+              Quiz and Games Nights
+            </div>
           </li>
           <li
             className="whats-on-button whats-on-button-arts"
             onClick={(event) => activityClick(event.target.innerText)}
           >
-            <h4>Arts and Crafts Workshops</h4>
+            <div className="h4" role="button">
+              Arts and Crafts Workshops
+            </div>
           </li>
           {/* <li className="whats-on-button whats-on-button-ceilidhs" onClick={(event) => activityClick(event.target.innerText)}>
             <h4>Ceilidhs</h4>
@@ -204,16 +223,20 @@ const WhatsOn = () => {
             className="whats-on-button whats-on-button-coffee"
             onClick={(event) => activityClick(event.target.innerText)}
           >
-            <h4>Coffee Mornings</h4>
+            <div className="h4" role="button">
+              Coffee Mornings
+            </div>
           </li>
           <li
             className="whats-on-button whats-on-button-pub-nights"
             onClick={(event) => activityClick(event.target.innerText)}
           >
-            <h4>Pub nights, dances and more...</h4>
+            <div className="h4" role="button">
+              Pub nights, dances and more...
+            </div>
           </li>
         </ul>
-        <h2>Calendar of events/Hall availibility</h2>
+        <h2 id="whats-on-calendar">Calendar of events/Hall availibility</h2>
         <div className="google-calendar">
           <div
             className="smgc-calendar-placeholder"

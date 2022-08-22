@@ -7,15 +7,23 @@ const Nav = ({ sticky }) => {
   return (
     <div className="navbar-container">
       <nav className="navbar">
-        <Link className="navbar-logo" to={{ pathname: "/mvh-example-draft" }}>
-          <img src={mvhlogo} height="70px" className="navbar-logo-image" />
+        <Link
+          className="navbar-logo"
+          to={{ pathname: "/milburn-village-hall" }}
+        >
+          <img
+            src={mvhlogo}
+            height="70px"
+            className="navbar-logo-image"
+            alt="milburn village hall logo"
+          />
         </Link>
         <div className="navbar-menu-container">
           <ul className="nav-menu-options">
             <li>
               <Link
                 className="navitem"
-                to={{ pathname: "/mvh-example-draft/" }}
+                to={{ pathname: "/milburn-village-hall/" }}
               >
                 HOME
               </Link>
@@ -23,7 +31,7 @@ const Nav = ({ sticky }) => {
             <li>
               <Link
                 className="navitem"
-                to={{ pathname: "/mvh-example-draft/whats-on" }}
+                to={{ pathname: "/milburn-village-hall/whats-on" }}
               >
                 WHAT'S ON
               </Link>
@@ -31,7 +39,7 @@ const Nav = ({ sticky }) => {
             <li>
               <Link
                 className="navitem"
-                to={{ pathname: "/mvh-example-draft/about" }}
+                to={{ pathname: "/milburn-village-hall/about" }}
               >
                 ABOUT
               </Link>
@@ -42,7 +50,7 @@ const Nav = ({ sticky }) => {
             <li className="navitem navitem-book">
               <Link
                 className="navitem"
-                to={{ pathname: "/mvh-example-draft/book" }}
+                to={{ pathname: "/milburn-village-hall/book" }}
               >
                 BOOK
               </Link>

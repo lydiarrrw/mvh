@@ -1,6 +1,5 @@
 import React from "react";
 import MapContainer from "./MapContainer.js";
-// import mvhhall from "../images/mvh-sunshine.jpg";
 import mvhhall from "../images/MVH-banner-photo.jpg";
 import newsevents from "../images/reading-hall-board-comp.png";
 import bookhall from "../images/celebration-hall-small.png";
@@ -14,7 +13,12 @@ const Home = () => {
           <h1>Milburn Village Hall</h1>
           <p>Community and event space</p>
         </div>
-        <img className="about-header_img" src={mvhhall} height="50px" />
+        <img
+          className="about-header_img"
+          src={mvhhall}
+          height="50px"
+          alt="outside view of milburn village hall"
+        />
       </section>
       <section id="mission">
         <p>
@@ -27,18 +31,30 @@ const Home = () => {
       <section id="more-info">
         <h2>More about the hall</h2>
         <div className="more-info-cards">
-          <a className="more-info-card" href="/whats-on">
-            <img src={newsevents} height="50px" />
+          <a className="more-info-card" href="/milburn-village-hall/whats-on">
+            <img
+              src={newsevents}
+              height="50px"
+              alt="woman reading notice board"
+            />
             <h3 className="more-info-card-title">What's on</h3>
             <p>Find out what's on at Milburn Village Hall</p>
           </a>
-          <a className="more-info-card" href="/book">
-            <img src={bookhall} height="50px" />
+          <a className="more-info-card" href="/milburn-village-hall/book">
+            <img
+              src={bookhall}
+              height="50px"
+              alt="hall full with diners at tables"
+            />
             <h3 className="more-info-card-title">Book the hall</h3>
             <p>See prices and terms of booking</p>
           </a>
-          <a className="more-info-card" href="/about">
-            <img src={abouthall} height="50px" />
+          <a className="more-info-card" href="/milburn-village-hall/about">
+            <img
+              src={abouthall}
+              height="50px"
+              alt="people sitting at tables with coffee"
+            />
             <h3 className="more-info-card-title">About the hall</h3>
             <p>Learn more about the facilities of the hall</p>
           </a>

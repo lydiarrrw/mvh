@@ -31,7 +31,7 @@ const About = () => {
   return (
     <div>
       <div className="about-header">
-        <img className="about-header_img" src={largehallheader} height="50px" />
+        <img className="about-header_img" src={largehallheader} height="50px" alt="inside the village hall" />
       </div>
       <div className="content-container">
         <section>

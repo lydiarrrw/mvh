@@ -9,13 +9,15 @@ const Footer = () => {
           <h4>About</h4>
           <ul>
             <li>
-              <a href="/mvh-example-draft/about">Facilities</a>
+              <a href="/milburn-village-hall/about">Facilities</a>
             </li>
             <li>
-              <a href="/mvh-example-draft/whats-on">News and events</a>
+              <a href="/milburn-village-hall/whats-on">News and events</a>
             </li>
             <li>
-              <a href="/mvh-example-draft/book">Policies</a>
+              <a href="/milburn-village-hall/book#book_important-documents">
+                Policies
+              </a>
             </li>
           </ul>
         </div>
@@ -23,13 +25,17 @@ const Footer = () => {
           <h4>Hall Bookings</h4>
           <ul>
             <li>
-              <a href="/mvh-example-draft/what's-on">Calendar</a>
+              <a href="/milburn-village-hall/whats-on#whats-on-calendar">
+                Calendar
+              </a>
             </li>
             <li>
-              <a href="/mvh-example-draft/book">Charges</a>
+              <a href="/milburn-village-hall/book#book_hire-charges">Charges</a>
             </li>
             <li>
-              <a href="/mvh-example-draft/book">Booking enquiries</a>
+              <a href="/milburn-village-hall/book#book_how-to-book">
+                Booking enquiries
+              </a>
             </li>
           </ul>
         </div>
@@ -51,7 +57,12 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer_charity">
-          <img src={mvhlogo} height="70px" className="navbar-logo-image" />
+          <img
+            src={mvhlogo}
+            height="70px"
+            className="navbar-logo-image"
+            alt="milburn village hall logo"
+          />
           <small>Charity commision number: 523069</small>
         </div>
       </div>

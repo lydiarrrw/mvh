@@ -27,7 +27,7 @@
       height: 20rem;
     }
 
-    h4 {
+    .h4 {
       margin: 0 1rem;
       display: flex;
       align-items: center;
@@ -41,7 +41,7 @@
       transform: scale(1.1);
       cursor: pointer;
 
-      h4 {
+      .h4 {
         text-decoration: underline;
         font-weight: 700;
       }
@@ -81,7 +81,7 @@
     cursor: pointer;
   }
 
-  h4 {
+  .h4 {
     position: relative;
     text-align: center;
   }
@@ -89,7 +89,7 @@
   &:hover {
     background: unset;
 
-    h4 {
+    .h4 {
       color: $brunswick-green;
     }
   }
