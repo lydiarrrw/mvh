@@ -9,7 +9,7 @@ const Nav = ({ sticky }) => {
       <nav className="navbar">
         <Link
           className="navbar-logo"
-          to={{ pathname: "/milburn-village-hall" }}
+          to={{ pathname: "/" }}
         >
           <img
             src={mvhlogo}
@@ -23,7 +23,7 @@ const Nav = ({ sticky }) => {
             <li>
               <Link
                 className="navitem"
-                to={{ pathname: "/milburn-village-hall/" }}
+                to={{ pathname: "/" }}
               >
                 HOME
               </Link>
@@ -31,7 +31,7 @@ const Nav = ({ sticky }) => {
             <li>
               <Link
                 className="navitem"
-                to={{ pathname: "/milburn-village-hall/whats-on" }}
+                to={{ pathname: "/whats-on" }}
               >
                 WHAT'S ON
               </Link>
@@ -39,7 +39,7 @@ const Nav = ({ sticky }) => {
             <li>
               <Link
                 className="navitem"
-                to={{ pathname: "/milburn-village-hall/about" }}
+                to={{ pathname: "/about" }}
               >
                 ABOUT
               </Link>
@@ -50,7 +50,7 @@ const Nav = ({ sticky }) => {
             <li className="navitem navitem-book">
               <Link
                 className="navitem"
-                to={{ pathname: "/milburn-village-hall/book" }}
+                to={{ pathname: "/book" }}
               >
                 BOOK
               </Link>

@@ -9,13 +9,13 @@ const Footer = () => {
           <h4>About</h4>
           <ul>
             <li>
-              <a href="/milburn-village-hall/about">Facilities</a>
+              <a href="/about">Facilities</a>
             </li>
             <li>
-              <a href="/milburn-village-hall/whats-on">News and events</a>
+              <a href="/whats-on">News and events</a>
             </li>
             <li>
-              <a href="/milburn-village-hall/book#book_important-documents">
+              <a href="/book#book_important-documents">
                 Policies
               </a>
             </li>
@@ -25,15 +25,15 @@ const Footer = () => {
           <h4>Hall Bookings</h4>
           <ul>
             <li>
-              <a href="/milburn-village-hall/whats-on#whats-on-calendar">
+              <a href="/whats-on#whats-on-calendar">
                 Calendar
               </a>
             </li>
             <li>
-              <a href="/milburn-village-hall/book#book_hire-charges">Charges</a>
+              <a href="/book#book_hire-charges">Charges</a>
             </li>
             <li>
-              <a href="/milburn-village-hall/book#book_how-to-book">
+              <a href="/book#book_how-to-book">
                 Booking enquiries
               </a>
             </li>
