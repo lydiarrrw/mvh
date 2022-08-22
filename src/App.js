@@ -1,6 +1,6 @@
 // ? Libraries
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 import Home from "./components/Home.js";
 import Nav from "./components/Nav.js";
@@ -12,7 +12,7 @@ import Book from "./components/Book.js";
 import "./styles/styles/style.scss";
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Nav />
     <Switch>
       <Route exact path="/" component={Home} />
@@ -21,7 +21,7 @@ const App = () => (
       <Route exact path="/book" component={Book} />
     </Switch>
     <Footer />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
