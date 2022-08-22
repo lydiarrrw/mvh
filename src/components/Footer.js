@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import mvhlogo from "../images/mvh-logo-light.svg";
 
 const Footer = () => {
@@ -9,15 +10,13 @@ const Footer = () => {
           <h4>About</h4>
           <ul>
             <li>
-              <a href="/about">Facilities</a>
+              <Link to="/about">Facilities</Link>
             </li>
             <li>
-              <a href="/whats-on">News and events</a>
+              <Link to="/whats-on">News and events</Link>
             </li>
             <li>
-              <a href="/book#book_important-documents">
-                Policies
-              </a>
+              <Link to="/book#book_important-documents">Policies</Link>
             </li>
           </ul>
         </div>
@@ -25,17 +24,13 @@ const Footer = () => {
           <h4>Hall Bookings</h4>
           <ul>
             <li>
-              <a href="/whats-on#whats-on-calendar">
-                Calendar
-              </a>
+              <Link to="/whats-on#whats-on-calendar">Calendar</Link>
             </li>
             <li>
-              <a href="/book#book_hire-charges">Charges</a>
+              <Link to="/book#book_hire-charges">Charges</Link>
             </li>
             <li>
-              <a href="/book#book_how-to-book">
-                Booking enquiries
-              </a>
+              <Link to="/book#book_how-to-book">Booking enquiries</Link>
             </li>
           </ul>
         </div>
