@@ -210,11 +210,13 @@ ul {
     margin: 2rem 10% 0 10%;
 
     .find-us-details {
-      width: 25%;
+      width: 30%;
       height: 20rem;
       padding: 5rem;
-      text-align: left;
+      text-align: center;
       margin-top: 2%;
+      position: relative;
+      right: -8rem;
     }
   }
 
@@ -223,4 +225,14 @@ ul {
       height: 50rem;
     }
   }
+}
+
+@media (min-width: 1260px) {
+  #home-header {
+    height: 80vh;
+  }
+}
+
+.map-visible {
+  display: none;
 }

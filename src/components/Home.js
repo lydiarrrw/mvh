@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MapContainer from "./MapContainer.js";
 import mvhhall from "../images/MVH-banner-photo.jpg";
 import newsevents from "../images/reading-hall-board-comp.png";
@@ -6,6 +6,12 @@ import bookhall from "../images/celebration-hall-small.png";
 import abouthall from "../images/activities/coffee.png";
 
 const Home = () => {
+  const [loading, updateLoading] = useState(true);
+
+  if (!(<map-component></map-component>)) {
+    updateLoading(false);
+  }
+
   return (
     <main className="parallax">
       <section id="home-header">
@@ -78,6 +84,7 @@ const Home = () => {
             <b>CA10 1TL</b>
           </p>
         </div>
+        <h5 className={loading ? "map-visible" : "map-missing"}>loading...</h5>
         <map-component></map-component>
       </section>
     </main>
