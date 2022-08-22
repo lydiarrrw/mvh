@@ -15,7 +15,7 @@ const App = () => (
   <BrowserRouter>
     <Nav />
     <Switch>
-      <Route exact path="/milburn-village-hall" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route exact path="/milburn-village-hall/whats-on" component={WhatsOn} />
       <Route exact path="/milburn-village-hall/about" component={About} />
       <Route exact path="/milburn-village-hall/book" component={Book} />
