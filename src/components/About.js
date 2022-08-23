@@ -31,7 +31,12 @@ const About = () => {
   return (
     <div>
       <div className="about-header">
-        <img className="about-header_img" src={largehallheader} height="50px" alt="inside the village hall" />
+        <img
+          className="about-header_img"
+          src={largehallheader}
+          height="50px"
+          alt="inside the village hall"
+        />
       </div>
       <div className="content-container">
         <section>
@@ -128,7 +133,7 @@ const About = () => {
             <p>
               If you have any questions then{" "}
               <a
-                class="about_contact-link"
+                className="about_contact-link"
                 href="mailto:milburnvillagehall@gmail.com"
               >
                 please get in touch.

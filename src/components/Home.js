@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+import React from "react";
+import { Link } from "react-router-dom";
+>>>>>>> 1/links-change-from-mvh-to-nothing
 import MapContainer from "./MapContainer.js";
 import mvhhall from "../images/MVH-banner-photo.jpg";
 import newsevents from "../images/reading-hall-board-comp.png";
@@ -37,7 +42,7 @@ const Home = () => {
       <section id="more-info">
         <h2>More about the hall</h2>
         <div className="more-info-cards">
-          <a className="more-info-card" href="/milburn-village-hall/whats-on">
+          <Link className="more-info-card" to="/whats-on">
             <img
               src={newsevents}
               height="50px"
@@ -45,8 +50,8 @@ const Home = () => {
             />
             <h3 className="more-info-card-title">What's on</h3>
             <p>Find out what's on at Milburn Village Hall</p>
-          </a>
-          <a className="more-info-card" href="/milburn-village-hall/book">
+          </Link>
+          <Link className="more-info-card" to="/book">
             <img
               src={bookhall}
               height="50px"
@@ -54,8 +59,8 @@ const Home = () => {
             />
             <h3 className="more-info-card-title">Book the hall</h3>
             <p>See prices and terms of booking</p>
-          </a>
-          <a className="more-info-card" href="/milburn-village-hall/about">
+          </Link>
+          <Link className="more-info-card" to="/about">
             <img
               src={abouthall}
               height="50px"
@@ -63,7 +68,7 @@ const Home = () => {
             />
             <h3 className="more-info-card-title">About the hall</h3>
             <p>Learn more about the facilities of the hall</p>
-          </a>
+          </Link>
         </div>
       </section>
       {/* <section id="gallery">
