@@ -26,15 +26,15 @@ const Book = () => {
           <p>
             The hall can be booked by session or for the whole day. Sessions are
             as follows:
-            <ul>
-              <li>Morning (early to 1pm)</li>
-              <li>Afternoon (1pm to 6pm)</li>
-              <li>Evening (6pm to 11pm)</li>
-            </ul>
           </p>
+          <ul>
+            <li>Morning (early to 1pm)</li>
+            <li>Afternoon (1pm to 6pm)</li>
+            <li>Evening (6pm to 11pm)</li>
+          </ul>
           <h2 id="book_hire-charges">Hire charges</h2>
           <table>
-            <th colspan="4" className="table-header">
+            <th colSpan="4" className="table-header">
               Hire charges
             </th>
             <tr>
@@ -90,7 +90,7 @@ const Book = () => {
               organised by the Hall Committee.
             </p>
             <table>
-              <th colspan="3" className="table-header">
+              <th colSpan="3" className="table-header">
                 Discounts
               </th>
               <tr>
