@@ -6,7 +6,6 @@ const WhatsOn = () => {
   const [badminton, updateBadminton] = useState(false);
   const [tableTennis, updateTableTennis] = useState(false);
   const [filmNight, updateFilmNight] = useState(false);
-  const [wineClub, updateWineClub] = useState(false);
   const [playgroup, updatePlaygroup] = useState(false);
   const [quizGames, updateQuizGames] = useState(false);
   const [artsCrafts, updateArtsCrafts] = useState(false);
@@ -18,15 +17,13 @@ const WhatsOn = () => {
       updateBadminton(true);
     } else if (title === "Table Tennis Club") {
       updateTableTennis(true);
-    } else if (title === "Film Night") {
+    } else if (title === "Film Club") {
       updateFilmNight(true);
-    } else if (title === "Wine Club") {
-      updateWineClub(true);
     } else if (title === "Quiz and Games Nights") {
       updateQuizGames(true);
     } else if (title === "Playgroup") {
       updatePlaygroup(true);
-    } else if (title === "Arts and Crafts Workshops") {
+    } else if (title === "Handicraft Group") {
       updateArtsCrafts(true);
     } else if (title === "Coffee Mornings") {
       updateCoffeeMornings(true);
@@ -39,7 +36,6 @@ const WhatsOn = () => {
     updateBadminton(false);
     updateTableTennis(false);
     updateFilmNight(false);
-    updateWineClub(false);
     updateQuizGames(false);
     updatePlaygroup(false);
     updateArtsCrafts(false);
@@ -79,25 +75,23 @@ const WhatsOn = () => {
           </div>
         </div>
       </div>
-      <div className={wineClub ? "whats-on-modal" : "modal-hidden"}>
-        <div className="whats-on-modal_box">
-          <div className="whats-on-modal_close" onClick={(e) => closeButton()}>
-            <p>X Close</p>
-          </div>
-          <div>
-            <h2>Wine club</h2>
-            <p>More info coming soon</p>
-          </div>
-        </div>
-      </div>
       <div className={filmNight ? "whats-on-modal" : "modal-hidden"}>
         <div className="whats-on-modal_box">
           <div className="whats-on-modal_close" onClick={(e) => closeButton()}>
             <p>X Close</p>
           </div>
-          <div>
-            <h2>Film Night</h2>
-            <p>More info coming soon</p>
+          <div className="whats-on-modal_content">
+            <h2>Film Club</h2>
+            <p>
+              We meet the last Friday of every month except December when there
+              is no film night. <br /> <br /> A variety of films are chosen and
+              provided by members who pay an annual membership fee. If you wish
+              to come and give it try or can only come occasionally you are
+              welcome to attend as a guest for a small charge. <br /> <br />
+              We start at 7.30pm and have a social break half way through the
+              film when you can purchase wine, tea or coffee with a few nibbles
+              provided.
+            </p>
           </div>
         </div>
       </div>
@@ -128,9 +122,17 @@ const WhatsOn = () => {
           <div className="whats-on-modal_close" onClick={(e) => closeButton()}>
             <p>X Close</p>
           </div>
-          <div>
-            <h2>Arts and Crafts</h2>
-            <p>More info coming soon</p>
+          <div className="whats-on-modal_content">
+            <h2>Handicraft Group</h2>
+            <p>
+              We meet monthly on the 3 rd Thursday evening 7.30pm until 9pm.
+              <br /> <br />
+              Come along and work on your chosen craft, enjoy a cuppa and chat
+              with others who are working on a variety of projects such as
+              knitting, cross stitch, embroidery, quilting, weaving and felting.
+              <br /> <br />
+              We look forward to seeing you soon.
+            </p>
           </div>
         </div>
       </div>
@@ -181,7 +183,7 @@ const WhatsOn = () => {
             onClick={(event) => activityClick(event.target.innerText)}
           >
             <div className="h4" role="button">
-              Film Night
+              Film Club
             </div>
           </li>
           <li
@@ -213,7 +215,7 @@ const WhatsOn = () => {
             onClick={(event) => activityClick(event.target.innerText)}
           >
             <div className="h4" role="button">
-              Arts and Crafts Workshops
+              Handicraft Group
             </div>
           </li>
           {/* <li className="whats-on-button whats-on-button-ceilidhs" onClick={(event) => activityClick(event.target.innerText)}>
