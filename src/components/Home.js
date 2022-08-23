@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
-=======
-import React from "react";
 import { Link } from "react-router-dom";
->>>>>>> 1/links-change-from-mvh-to-nothing
 import MapContainer from "./MapContainer.js";
 import mvhhall from "../images/MVH-banner-photo.jpg";
 import newsevents from "../images/reading-hall-board-comp.png";
