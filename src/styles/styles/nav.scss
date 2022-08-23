@@ -99,6 +99,24 @@
 }
 //////////////////////MEDIA Query/////////////////////////////
 
+@media (max-width: 380px) {
+  .navbar {
+    height: 23vh;
+  }
+
+  .navbar-menu-container {
+    width: unset;
+  }
+
+  .nav-menu-options {
+    margin: 0 0.5rem 0.5rem 0.5rem;
+  }
+
+  .navitem-book {
+    padding: 1rem;
+  }
+}
+
 @media (min-width: 850px) {
   .navbar {
     flex-direction: row;

@@ -8,6 +8,12 @@
 @import "whatson";
 @import "about";
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   color: $chicago;
   margin: 0;
@@ -16,9 +22,9 @@ body {
 }
 
 .content-container {
-  width: 80vw;
-  margin-left: 10vw;
-  margin-right: auto;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 table {
