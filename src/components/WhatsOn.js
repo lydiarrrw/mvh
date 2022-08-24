@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactEmbeddedGoogleCalendar } from "react-embedded-google-calendar";
+// import { ReactEmbeddedGoogleCalendar } from "react-embedded-google-calendar";
 import COFFEE from "../images/coffeemorning1smaller.png";
 
 const WhatsOn = () => {
@@ -15,7 +15,6 @@ const WhatsOn = () => {
   function activityClick(title) {
     if (title === "Badminton Club") {
       updateBadminton(true);
-      console.log(badminton);
     } else if (title === "Table Tennis Club") {
       updateTableTennis(true);
     } else if (title === "Film Club") {
