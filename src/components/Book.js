@@ -11,7 +11,7 @@ import pdfIcon from "../images/pdf-svgrepo-com.svg";
 
 const Book = () => {
   return (
-    <main>
+    <main id="top-content">
       <div className="about-header">
         <img
           className="about-header_img"

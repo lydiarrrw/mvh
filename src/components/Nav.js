@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import mvhlogo from "../images/mvh-logo.svg";
 
@@ -7,53 +8,38 @@ const Nav = () => {
   return (
     <div className="navbar-container">
       <nav className="navbar">
-        <Link
-          className="navbar-logo"
-          to={{ pathname: "/" }}
-        >
+        <HashLink className="navbar-logo" to="/#top-content">
           <img
             src={mvhlogo}
             height="70px"
             className="navbar-logo-image"
             alt="milburn village hall logo"
           />
-        </Link>
+        </HashLink>
         <div className="navbar-menu-container">
           <ul className="nav-menu-options">
             <li>
-              <Link
-                className="navitem"
-                to={{ pathname: "/" }}
-              >
+              <HashLink className="navitem" to="/#top-content">
                 HOME
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link
-                className="navitem"
-                to={{ pathname: "/whats-on" }}
-              >
+              <HashLink className="navitem" to="/whats-on#top-content">
                 WHAT'S ON
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link
-                className="navitem"
-                to={{ pathname: "/about" }}
-              >
+              <HashLink className="navitem" to="/about#top-content">
                 ABOUT
-              </Link>
+              </HashLink>
             </li>
             {/* <li>
             <a href="#contact">CONTACT</a>
           </li> */}
             <li className="navitem navitem-book">
-              <Link
-                className="navitem"
-                to={{ pathname: "/book" }}
-              >
+              <HashLink className="navitem" to="/book#top-content">
                 BOOK
-              </Link>
+              </HashLink>
             </li>
           </ul>
         </div>

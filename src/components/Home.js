@@ -14,7 +14,7 @@ const Home = () => {
   }
 
   return (
-    <main className="parallax">
+    <main className="parallax" id="top-content">
       <section id="home-header">
         <div className="home-header-title">
           <h1>Milburn Village Hall</h1>

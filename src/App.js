@@ -1,6 +1,6 @@
 // ? Libraries
 import React from "react";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route, useHistory } from "react-router-dom";
 
 import Home from "./components/Home.js";
 import Nav from "./components/Nav.js";
@@ -12,6 +12,7 @@ import Book from "./components/Book.js";
 import "./styles/styles/style.scss";
 
 const App = () => (
+  
   <HashRouter>
     <Nav />
     <Switch>

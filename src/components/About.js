@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import largehallheader from "../images/large-hall-small.png";
 import largehall from "../images/empty-hall-whole.jpg";
 import smallhall from "../images/small-hall-comp.png";
@@ -25,7 +25,7 @@ const About = () => {
   }
 
   return (
-    <div>
+    <main id="top-content">
       <div className="about-header">
         <img
           className="about-header_img"
@@ -138,7 +138,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 export default About;

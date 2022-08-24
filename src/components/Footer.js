@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import mvhlogo from "../images/mvh-logo-light.svg";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -10,13 +11,13 @@ const Footer = () => {
           <h4>About</h4>
           <ul>
             <li>
-              <Link to="/about">Facilities</Link>
+              <HashLink to="/about#top-content">Facilities</HashLink>
             </li>
             <li>
-              <Link to="/whats-on">News and events</Link>
+              <HashLink to="/whats-on#top-content">News and events</HashLink>
             </li>
             <li>
-              <Link to="/book#book_important-documents">Policies</Link>
+              <HashLink to="/book#book_important-documents">Policies</HashLink>
             </li>
           </ul>
         </div>
@@ -24,13 +25,13 @@ const Footer = () => {
           <h4>Hall Bookings</h4>
           <ul>
             <li>
-              <Link to="/whats-on#whats-on-calendar">Calendar</Link>
+              <HashLink to="/whats-on#whats-on-calendar">Calendar</HashLink>
             </li>
             <li>
-              <Link to="/book#book_hire-charges">Charges</Link>
+              <HashLink to="/book#book_hire-charges">Charges</HashLink>
             </li>
             <li>
-              <Link to="/book#book_how-to-book">Booking enquiries</Link>
+              <HashLink to="/book#book_how-to-book">Booking enquiries</HashLink>
             </li>
           </ul>
         </div>

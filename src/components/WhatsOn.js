@@ -44,7 +44,7 @@ const WhatsOn = () => {
   }
 
   return (
-    <main>
+    <main id="top-content">
       <div className="about-header">
         <img
           className="about-header_img"
