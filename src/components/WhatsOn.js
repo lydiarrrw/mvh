@@ -15,6 +15,7 @@ const WhatsOn = () => {
   function activityClick(title) {
     if (title === "Badminton Club") {
       updateBadminton(true);
+      console.log(badminton);
     } else if (title === "Table Tennis Club") {
       updateTableTennis(true);
     } else if (title === "Film Club") {
@@ -164,7 +165,7 @@ const WhatsOn = () => {
         <ul className="whats-on-activities">
           <li
             className="whats-on-button whats-on-button-badminton"
-            onClick={(event) => activityClick(event.target.innerText)}
+            onClick={() => activityClick("Badminton Club")}
           >
             <div className="h4" role="button">
               Badminton Club
@@ -172,7 +173,7 @@ const WhatsOn = () => {
           </li>
           <li
             className="whats-on-button whats-on-button-table-tennis"
-            onClick={(event) => activityClick(event.target.innerText)}
+            onClick={() => activityClick("Table Tennis Club")}
           >
             <div className="h4" role="button">
               Table Tennis Club
@@ -180,23 +181,15 @@ const WhatsOn = () => {
           </li>
           <li
             className="whats-on-button whats-on-button-film-night"
-            onClick={(event) => activityClick(event.target.innerText)}
+            onClick={() => activityClick("Film Club")}
           >
             <div className="h4" role="button">
               Film Club
             </div>
           </li>
           <li
-            className="whats-on-button whats-on-button-wine-club"
-            onClick={(event) => activityClick(event.target.innerText)}
-          >
-            <div className="h4" role="button">
-              Wine Club
-            </div>
-          </li>
-          <li
             className="whats-on-button whats-on-button-playgroup"
-            onClick={(event) => activityClick(event.target.innerText)}
+            onClick={() => activityClick("Playgroup")}
           >
             <div className="h4" role="button">
               Playgroup
@@ -204,7 +197,7 @@ const WhatsOn = () => {
           </li>
           <li
             className="whats-on-button whats-on-button-quiz"
-            onClick={(event) => activityClick(event.target.innerText)}
+            onClick={() => activityClick("Quiz and Games Nights")}
           >
             <div className="h4" role="button">
               Quiz and Games Nights
@@ -212,7 +205,7 @@ const WhatsOn = () => {
           </li>
           <li
             className="whats-on-button whats-on-button-arts"
-            onClick={(event) => activityClick(event.target.innerText)}
+            onClick={() => activityClick("Handicraft Group")}
           >
             <div className="h4" role="button">
               Handicraft Group
@@ -223,7 +216,7 @@ const WhatsOn = () => {
           </li> */}
           <li
             className="whats-on-button whats-on-button-coffee"
-            onClick={(event) => activityClick(event.target.innerText)}
+            onClick={() => activityClick("Coffee Mornings")}
           >
             <div className="h4" role="button">
               Coffee Mornings
@@ -231,7 +224,7 @@ const WhatsOn = () => {
           </li>
           <li
             className="whats-on-button whats-on-button-pub-nights"
-            onClick={(event) => activityClick(event.target.innerText)}
+            onClick={() => activityClick("Pub nights, dances and more...")}
           >
             <div className="h4" role="button">
               Pub nights, dances and more...

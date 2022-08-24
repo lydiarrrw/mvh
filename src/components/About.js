@@ -11,17 +11,14 @@ const About = () => {
 
   function tabClick(tabName) {
     if (tabName == "Whole Hall") {
-      console.log(tabName);
       updateSmallHall(false);
       updateWholeHall(true);
       updateLargeHall(false);
     } else if (tabName == "Large Hall") {
-      console.log(tabName);
       updateWholeHall(false);
       updateSmallHall(false);
       updateLargeHall(true);
     } else {
-      console.log(tabName);
       updateSmallHall(true);
       updateWholeHall(false);
       updateLargeHall(false);
