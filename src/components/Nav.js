@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import mvhlogo from "../images/mvh-logo.svg";
 
-const Nav = ({ sticky }) => {
+const Nav = () => {
   return (
     <div className="navbar-container">
       <nav className="navbar">

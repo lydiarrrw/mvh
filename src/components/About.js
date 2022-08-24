@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Aboutcomp from "./about-component.js";
+import React from "react";
 import largehallheader from "../images/large-hall-small.png";
 import largehall from "../images/empty-hall-whole.jpg";
 import smallhall from "../images/small-hall-comp.png";
