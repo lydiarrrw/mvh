@@ -230,7 +230,7 @@ const WhatsOn = () => {
             </div>
           </li>
         </ul>
-        <h2 id="whats-on-calendar">Calendar of events/Hall availibility</h2>
+        <h2 id="whats-on-calendar">Calendar of events/Hall availability</h2>
         <div className="google-calendar">
           <div
             className="smgc-calendar-placeholder"
