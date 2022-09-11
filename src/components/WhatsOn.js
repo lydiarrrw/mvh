@@ -100,9 +100,16 @@ const WhatsOn = () => {
           <div className="whats-on-modal_close" onClick={(e) => closeButton()}>
             <p>X Close</p>
           </div>
-          <div>
+          <div className="whats-on-modal_content">
             <h2>Quiz and Games</h2>
-            <p>More info coming soon</p>
+            <p>
+              We hold games nights and socials during the year, where people
+              have a go at indoor bowling and lots of different board games, and
+              catch up with friends and neighbours. <br />
+              <br />
+              These are usually free events with a paid bar. In 2023, we plan to
+              hold Quiz nights; watch this space for more details.
+            </p>
           </div>
         </div>
       </div>
