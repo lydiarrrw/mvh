@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import eventimage from "../images/celebration-hall-small.png";
 import financePolicyPdf from "../../public/finance-policy-2020.pdf";
 import heatingInstructions from "../../public/heating-instructions.pdf";
@@ -28,9 +29,9 @@ const Book = () => {
             as follows:
           </p>
           <ul>
-            <li>Morning (early to 1pm)</li>
-            <li>Afternoon (1pm to 6pm)</li>
-            <li>Evening (6pm to 11pm)</li>
+            <li>Morning (9.00am to 12.30pm)</li>
+            <li>Afternoon (1.00pm to 5.30pm)</li>
+            <li>Evening (6.00pm to 11.00pm)</li>
           </ul>
           <h2 id="book_hire-charges">Hire charges</h2>
           <table>
@@ -52,14 +53,14 @@ const Book = () => {
             <tr>
               <td>2 sessions</td>
               <td>£30.00</td>
-              <td>£55.00</td>
-              <td>£70.00</td>
+              <td>£60.00</td>
+              <td>£80.00</td>
             </tr>
             <tr>
-              <td>Whole day</td>
+              <td>Whole day (3 sessions)</td>
               <td>£50.00</td>
-              <td>£100.00</td>
-              <td>£120.00</td>
+              <td>£85.00</td>
+              <td>£115.00</td>
             </tr>
           </table>
           <p>Hourly hire may be available, please enquire.</p>
@@ -68,8 +69,8 @@ const Book = () => {
           <ul>
             <li>
               A deposit may be required, please ask when booking. Viewings
-              available, please contact either Joanna as above or Barry on
-              07762650828
+              available, please contact&nbsp;
+              <HashLink to="/book#book_how-to-book">Joanna</HashLink>.
             </li>
             <li>
               If you wish to hold a bar there is an additional £15.00 charge to
@@ -85,39 +86,9 @@ const Book = () => {
           <div>
             <h2>Discounts</h2>
             <p>
-              Discounts are available for residents of Milburn Parish Community
-              activity groups, Charity and non revenue raising groups and events
-              organised by the Hall Committee.
+              Discounts are available for residents of Milburn Parish. Please
+              contact Joanna for more information.
             </p>
-            <table>
-              <th colSpan="3" className="table-header">
-                Discounts
-              </th>
-              <tr>
-                <th>External bookings</th>
-                <td>0%</td>
-              </tr>
-              <tr>
-                <th>Parishoners' personal events</th>
-                <td>50%</td>
-              </tr>
-              <tr>
-                <th>Parishoners' commercial events</th>
-                <td>On request%</td>
-              </tr>
-              <tr>
-                <th>Community activity groups</th>
-                <td>Up to 75%</td>
-              </tr>
-              <tr>
-                <th>Community benefit groups e.g. First Responders</th>
-                <td>Up to 100%</td>
-              </tr>
-              <tr>
-                <th>Village Hall Committee own events</th>
-                <td>100%</td>
-              </tr>
-            </table>
           </div>
           <h2 id="book_how-to-book">How to book</h2>
           <p>

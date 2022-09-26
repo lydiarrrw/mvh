@@ -69,9 +69,15 @@ const WhatsOn = () => {
           <div className="whats-on-modal_close" onClick={(e) => closeButton()}>
             <p>X Close</p>
           </div>
-          <div>
-            <h2>Table tennis club</h2>
-            <p>More info coming soon</p>
+          <div className="whats-on-modal_content">
+            <h2>Table Tennis Club</h2>
+            <p>
+              September - March.
+              <br /> <br />
+              Tuesdays 7pm - 9pm, £2 juniors, £2.50 adults.
+              <br /> <br />
+              Beginners welcome, friendly competition, quarterly tournaments.
+            </p>
           </div>
         </div>
       </div>

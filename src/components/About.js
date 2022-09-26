@@ -74,8 +74,8 @@ const About = () => {
             />
             <h4>Key details</h4>
             <ul>
-              <li>Capacity 106</li>
-              <li>Dimensions 6m x 17.7m</li>
+              <li>Capacity 100 (90 seated)</li>
+              <li>Dimensions 6m x 15m (19'8"x 49'2")</li>
               <li>Projector, screen and fully integrated Kef sound system.</li>
             </ul>
           </article>
@@ -89,7 +89,7 @@ const About = () => {
             <h4>Key details</h4>
             <ul>
               <li>Capacity 106</li>
-              <li>Dimensions: 6m x 11.7m (6'8" x 38'4)</li>
+              <li>Dimensions: 6m x 11.8m (19'8" x 38'8)</li>
               <li>Projector, screen and fully integrated Kef sound system.</li>
             </ul>
           </article>
@@ -103,15 +103,15 @@ const About = () => {
             <h4>Key details</h4>
             <ul>
               <li>Capacity 20/25</li>
-              <li>Dimensions: 6m x 3m (6'8" x 9'10")</li>
+              <li>Dimensions: 6m x 3.2m (19'8" x 10'6")</li>
             </ul>
           </article>
           <div className="about_key-info">
             <h4>Facilities</h4>
             <ul>
               <li>Comfortable padded chairs</li>
-              <li>6 'lightweight' Gopack tables (seat 6 to a table)</li>
-              <li>3 small Gopack tables</li>
+              <li>15 'lightweight' Gopack tables (seat 6 to a table)</li>
+              <li>2 small Gopack tables</li>
               <li>
                 Multi purpose connectable table system, can be used as tables as
                 various sizes and as a stage
@@ -122,8 +122,8 @@ const About = () => {
             <h4>Accessibility</h4>
             <p>The hall has the following features:</p>
             <ul>
-              <li>Ramp leading to the entrance for wheelchair access.</li>
-              <li>Accessible toilet</li>
+              <li>Ramp leading to the entrance for wheelchair access</li>
+              <li>Accessible toilet (wheelchair accessible)</li>
               <li>Hearing loop</li>
             </ul>
             <p>
