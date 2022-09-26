@@ -31,8 +31,7 @@ const Home = () => {
         <p>
           The Hall is a friendly, welcoming space, providing regular activities
           both for villagers and for people living further afield. It has a
-          well-equipped kitchen and room for events of up to 100 people standing
-          and 90 seated.
+          well-equipped kitchen and room for events of up to 100 people.
         </p>
       </section>
       <section id="more-info">
