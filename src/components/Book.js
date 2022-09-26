@@ -42,7 +42,7 @@ const Book = () => {
               <th></th>
               <th>Small Room</th>
               <th>Large Room</th>
-              <th>Whole Room</th>
+              <th>Whole Hall</th>
             </tr>
             <tr>
               <td>1 session</td>
