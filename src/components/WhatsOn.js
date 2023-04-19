@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import { ReactEmbeddedGoogleCalendar } from "react-embedded-google-calendar";
 import COFFEE from "../images/coffeemorning1smaller.png";
+import CalendarContainer from "./CalendarContainer.js";
 
 const WhatsOn = () => {
   const [badminton, updateBadminton] = useState(false);
@@ -11,6 +12,10 @@ const WhatsOn = () => {
   const [artsCrafts, updateArtsCrafts] = useState(false);
   const [coffeeMornings, updateCoffeeMornings] = useState(false);
   const [moreEvents, updateMoreEvents] = useState(false);
+
+  if (!(<calendar-component></calendar-component>)) {
+    updateLoading(false);
+  }
 
   function activityClick(title) {
     if (title === "Badminton Club") {
@@ -244,12 +249,21 @@ const WhatsOn = () => {
           </li>
         </ul>
         <h2 id="whats-on-calendar">Calendar of events/Hall availability</h2>
-        <div className="google-calendar">
+        <calendar-component></calendar-component>
+        {/* <iframe
+          src="https://calendar.google.com/calendar/embed?src=milburnvillagehall%40gmail.com&ctz=Europe%2FLondon"
+          style="border: 0"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe> */}
+        {/* <div className="google-calendar">
           <div
             className="smgc-calendar-placeholder"
             id="smgc-cal-YhUAQFrSY5awkPWnT7VD"
           ></div>
-        </div>
+        </div> */}
       </div>
     </main>
   );
