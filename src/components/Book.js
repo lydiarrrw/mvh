@@ -70,7 +70,7 @@ const Book = () => {
             <li>
               A deposit may be required, please ask when booking. Viewings
               available, please contact&nbsp;
-              <HashLink to="/book#book_how-to-book">Joanna</HashLink>.
+              <HashLink to="/book#book_how-to-book">Deb</HashLink>.
             </li>
             <li>
               If you wish to hold a bar there is an additional £15.00 charge to
@@ -87,18 +87,18 @@ const Book = () => {
             <h2>Discounts</h2>
             <p>
               Discounts are available for residents of Milburn Parish. Please
-              contact Joanna for more information.
+              contact Deb for more information.
             </p>
           </div>
           <h2 id="book_how-to-book">How to book</h2>
           <p>
             To book, please contact:
             <br />
-            Joanna Armstrong
+            Deb Payton
             <br />
-            <b>Phone:</b> 07813689078
+            <b>Phone:</b> 07811580922
             <br />
-            <b>Email:</b> joanna_armstrong@outlook.com
+            <b>Email:</b> deb.payton@talk21.com
           </p>
           <h2 id="book_important-documents">Important Documents</h2>
           <div className="book_important-documents">
