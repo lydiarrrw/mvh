@@ -188,22 +188,22 @@ const WhatsOn = () => {
               Badminton Club
             </div>
           </li>
-          <li
+          {/* <li
             className="whats-on-button whats-on-button-table-tennis"
             onClick={() => activityClick("Table Tennis Club")}
           >
             <div className="h4" role="button">
               Table Tennis Club
             </div>
-          </li>
-          <li
+          </li> */}
+          {/* <li
             className="whats-on-button whats-on-button-film-night"
             onClick={() => activityClick("Film Club")}
           >
             <div className="h4" role="button">
               Film Club
             </div>
-          </li>
+          </li> */}
           <li
             className="whats-on-button whats-on-button-playgroup"
             onClick={() => activityClick("Playgroup")}
