@@ -119,7 +119,7 @@ const Book = () => {
               session there may be an extra charge. Please ask when making a booking.
             </li>
             <li>
-              The following regular village activity groups are each charged £10.00 per session 
+              The following regular village activity groups are each charged £12.50 per session 
               - Badminton, Handicraft, Playgroup, First Responders, Table Tennis, Milburn School P.E.and Shoebox packing.
             </li>
             <li>
