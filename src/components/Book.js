@@ -3,7 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import eventimage from "../images/celebration-hall-small.png";
 import financePolicyPdf from "../../public/finance-policy-2020.pdf";
 import heatingInstructions from "../../public/heating-instructions.pdf";
-import infoForUsers from "../../public/Milburn_VH_Info_for_Users.pdf";
+import infoForUsers from "../../public/Milburn_Village_Hall_Info_for_Users.pdf";
 import bookingFormAgreement from "../../public/Milburn_VH_Booking_Form_Agreement.pdf";
 import complaintsPolicy from "../../public/mvh-complaints-policy-2019.pdf";
 import vhDataProtectionPolicy from "../../public/vh_dataProtectionPolicy.pdf";
