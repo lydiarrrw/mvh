@@ -7,7 +7,7 @@ import infoForUsers from "../../public/Milburn_Village_Hall_Info_for_Users.pdf";
 import bookingFormAgreement from "../../public/Milburn_VH_Booking_Form_Agreement.pdf";
 import complaintsPolicy from "../../public/mvh-complaints-policy-2019.pdf";
 import vhDataProtectionPolicy from "../../public/vh_dataProtectionPolicy.pdf";
-import safeguardingStatement from "../../public/safeguardingstatment.pdf";
+import safeguardingStatement from "../../public/safeguarding_statement.pdf";
 import pdfIcon from "../images/pdf-svgrepo-com.svg";
 
 const Book = () => {
