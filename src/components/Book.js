@@ -217,7 +217,7 @@ const Book = () => {
                 </a>
               </li>
               <li>
-                <a href="/src/assets/vh_dataprotectionpolicy.pdf" download>
+                <a href={vhDataProtectionPolicy} download>
                   <img
                     src={pdfIcon}
                     alt="pdf icon"
