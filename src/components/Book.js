@@ -9,6 +9,7 @@ import complaintsPolicy from "../../public/mvh-complaints-policy-2019.pdf";
 import vhDataProtectionPolicy from "../../public/vh_dataProtectionPolicy.pdf";
 import safeguardingStatement from "../../public/safeguarding_statement.pdf";
 import pdfIcon from "../images/pdf-svgrepo-com.svg";
+import healthSafety from "../../public/Milburn_VH_Health_Safety_2024.pdf";
 
 const Book = () => {
   return (
@@ -201,6 +202,16 @@ const Book = () => {
                     className="book_important-documents_pdf-icon"
                   />
                   Finance Policy
+                </a>
+              </li>
+              <li>
+                <a href={healthSafety} download>
+                  <img
+                    src={pdfIcon}
+                    alt="pdf icon"
+                    className="book_important-documents_pdf-icon"
+                  />
+                  Health and Safety
                 </a>
               </li>
             </ul>
