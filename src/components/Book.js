@@ -97,7 +97,6 @@ const Book = () => {
           </table>
           <p>* Reduced prices for residents of Milburn Parish for their own personal events, Milburn Church, Milburn Parish Council, 
             Milburn School (non PE events) Parishioner organised charity events and Parishioner family funerals.</p>
-          <p>Hourly hire may be available, please enquire.</p>
         </div>
         <div>
           <ul>
